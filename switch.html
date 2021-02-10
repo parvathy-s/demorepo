@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch Ex</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+	<select ng-model="ch">
+		<option value="dog">Dog</option>
+		<option value="cat">Cat</option>
+	</select>
+	<hr>
+	<div ng-switch="ch">
+		<div ng-switch-when="dog"><p>Dogs are welcome!</p></div>
+		<div ng-switch-when="cat"><p>Cats are welcome!</p></div>
+		<div ng-switch-default>Default!</div>
+	</div>
+</body>
+</html>

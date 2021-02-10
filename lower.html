@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript">
+        var app=angular.module("LowerCase",[]);
+        app.controller("lowercasectrl",function($scope))
+        {
+            $scope.users
+        }
+    </script>
+</head>
+<body ng-app="LowerCase">
+    <div ng-controller="lowercasectrl">
+        <ul ng-repeat="obj in users">
+            <li>{{obj.name | lowercase }}</li>
+        </ul>
+    </div>
+</body>
+</html>
